@@ -26,5 +26,7 @@ namespace GitGrabber
                 throw new Exception(ExceptionDictionary.NotConnected);
             }
         }
+
+        
     }
 }
