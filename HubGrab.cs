@@ -11,7 +11,8 @@ namespace GitGrabber
             connection_latency = 0
         };
         public bool Connect() {
-            
+            connection = ConnectionWorker.Connect();
+            return connection.connection_success;
         }
     }
 }
