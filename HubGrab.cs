@@ -14,5 +14,9 @@ namespace GitGrabber
             connection = ConnectionWorker.Connect();
             return connection.connection_success;
         }
+
+        public GithubApiResponse GithubApi() {
+            
+        }
     }
 }
