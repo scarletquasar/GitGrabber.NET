@@ -27,10 +27,8 @@ namespace GitGrabber.Components {
 
                 return JsonSerializer.Deserialize<GithubUser>(result);
             }
-            catch(Exception e) {
-                return new GithubUser() {
-                    name = e + ""
-                };
+            catch {
+                return null;
             }
         }
     }
