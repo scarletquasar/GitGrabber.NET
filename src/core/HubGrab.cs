@@ -33,7 +33,7 @@ namespace GitGrabber
         }
 
         public GithubRepo GetRepo(string username, string reponame) {
-            return new FetchGithubRepo().GrabObject("https://api.github.com/users/" + username + "/" + reponame);
+            return new FetchGithubRepo().GrabObject("https://api.github.com/repos/" + username + "/" + reponame);
         }
 
         
