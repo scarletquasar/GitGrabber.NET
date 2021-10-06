@@ -10,7 +10,7 @@ namespace cli
             GitGrabConnection GitConnection = new();
             GitConnection.Connect();
 
-            GithubRepo Htapps = GitConnection.GetRepo("EternalQuasar0206", "htapps");
+            GithubUser Htapps = GitConnection.GetUser("EternalQuasar0206");
             Console.WriteLine(Htapps.name);
         }
     }
