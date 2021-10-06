@@ -4,9 +4,9 @@ using System.Net;
 using System.IO;
 using System;
 namespace GitGrabber.Components {
-    public class FetchGithubUser : IFetchOperation {
+    public class FetchGithubUser {
         //TODO: Add Exception Handler
-        public dynamic GrabObject(string target) {
+        public GithubUser GrabObject(string target) {
             try {
                 string result = string.Empty;
                 string url = target;
@@ -28,7 +28,9 @@ namespace GitGrabber.Components {
                 return JsonSerializer.Deserialize<GithubUser>(result);
             }
             catch(Exception e) {
-                return e.ToString();
+                return new GithubUser() {
+                    name = e + ""
+                };
             }
         }
     }
