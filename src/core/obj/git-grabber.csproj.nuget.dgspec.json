@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Outros\\treino\\git-grabber\\git-grabber.csproj": {}
+    "C:\\Users\\User\\Desktop\\Outros\\treino\\git-grabber\\src\\core\\git-grabber.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Outros\\treino\\git-grabber\\git-grabber.csproj": {
+    "C:\\Users\\User\\Desktop\\Outros\\treino\\git-grabber\\src\\core\\git-grabber.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Outros\\treino\\git-grabber\\git-grabber.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Outros\\treino\\git-grabber\\src\\core\\git-grabber.csproj",
         "projectName": "git-grabber",
-        "projectPath": "C:\\Users\\User\\Desktop\\Outros\\treino\\git-grabber\\git-grabber.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Outros\\treino\\git-grabber\\src\\core\\git-grabber.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Outros\\treino\\git-grabber\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Outros\\treino\\git-grabber\\src\\core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

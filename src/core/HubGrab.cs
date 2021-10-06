@@ -1,6 +1,7 @@
 ﻿using System;
 using GitGrabber.Models;
 using GitGrabber.Components;
+using System.Text.Json;
 
 namespace GitGrabber
 {
@@ -25,6 +26,14 @@ namespace GitGrabber
             else {
                 throw new Exception(ExceptionDictionary.NotConnected);
             }
+        }
+
+        public GithubUser GetUser(string username) {
+            return new FetchGithubUser().GrabObject("https://api.github.com/users/" + username);
+        }
+
+        public GithubRepo GetRepo(string username, string reponame) {
+            return new FetchGithubRepo().GrabObject("https://api.github.com/users/" + username + "/" + reponame);
         }
 
         
