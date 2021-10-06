@@ -1,0 +1,9 @@
+C:\Users\User\Desktop\Outros\treino\git-grabber\bin\Debug\netstandard2.0\git-grabber.deps.json
+C:\Users\User\Desktop\Outros\treino\git-grabber\bin\Debug\netstandard2.0\git-grabber.dll
+C:\Users\User\Desktop\Outros\treino\git-grabber\bin\Debug\netstandard2.0\git-grabber.pdb
+C:\Users\User\Desktop\Outros\treino\git-grabber\obj\Debug\netstandard2.0\git-grabber.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Outros\treino\git-grabber\obj\Debug\netstandard2.0\git-grabber.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Outros\treino\git-grabber\obj\Debug\netstandard2.0\git-grabber.AssemblyInfo.cs
+C:\Users\User\Desktop\Outros\treino\git-grabber\obj\Debug\netstandard2.0\git-grabber.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Outros\treino\git-grabber\obj\Debug\netstandard2.0\git-grabber.dll
+C:\Users\User\Desktop\Outros\treino\git-grabber\obj\Debug\netstandard2.0\git-grabber.pdb

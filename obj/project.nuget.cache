@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rb7TkJ6OPZx1frfRo7JlJ9wEkdOk57PxtVd3PensfI5lzOHrCPQ2sRwpWArZ+DdLXVECBnXILuZZxx6ZZ5P21A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\User\\Desktop\\Outros\\treino\\git-grabber\\git-grabber.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
