@@ -41,8 +41,9 @@ namespace GitGrabber.Components {
 
                 return JsonSerializer.Deserialize<GithubApiResponse>(result);
             }
-            catch{}
-
+            catch{
+                return new GithubApiResponse();
+            }
         }
     }
 }

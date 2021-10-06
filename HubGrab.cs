@@ -16,7 +16,12 @@ namespace GitGrabber
         }
 
         public GithubApiResponse GithubApi() {
-            
+            if(connection.connection_success) {
+                return ConnectionWorker.Fetch();
+            }
+            else {
+                return new GithubApiResponse();
+            }
         }
     }
 }
