@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using GitGrabber.Components;
 
 namespace GitGrabber.Models {
     public class GithubUser {
@@ -36,8 +37,8 @@ namespace GitGrabber.Models {
         public string updated_at {get; set;}
 
         /* Built-in dynamic data retrieval features */
-        public List<GithubUser> GetFollowers() {
-            
+        public List<GithubUser> GetFollowers(string followed) {
+            return FetchUserFollowers.Execute($"https://api.github.com/users/{followed}/followers");
         }
     }
 }
