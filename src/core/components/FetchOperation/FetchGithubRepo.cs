@@ -14,7 +14,9 @@ namespace GitGrabber.Components {
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
                 request.AutomaticDecompression = DecompressionMethods.GZip;
 
-                request.Headers.Add("Accept", "application/vnd.github.v3+json"); // [Added Header to enable api usage]
+                // [Added Headers to enable api usage]
+                request.Headers.Add("Accept", "application/vnd.github.v3+json"); 
+                request.Headers.Add("User-Agent", "request");
 
                 using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
                 using (Stream stream = response.GetResponseStream())
