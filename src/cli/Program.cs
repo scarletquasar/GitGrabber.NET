@@ -11,7 +11,7 @@ namespace cli
             GitConnection.Connect();
 
             GithubRepo Htapps = GitConnection.GetRepo("EternalQuasar0206", "htapps");
-            Console.WriteLine(Htapps.allow_forking);
+            Console.WriteLine(Htapps.name);
         }
     }
 }
