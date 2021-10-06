@@ -3,8 +3,8 @@ namespace GitGrabber.Models {
         public int id {get; set;}
         public string node_id {get; set;}
         public string name {get; set;}
-        public bool @private {get; set;} /* Info: private field of API requisition */
-        public string owner {get; set;} /* Info: Only the username will be fetched from the requisition */
+        //public bool @private {get; set;} /* Info: private field of API requisition */
+        //public string owner {get; set;} /* Info: Only the username will be fetched from the requisition */
         public string html_url {get; set;}
         public string description {get; set;}
         public bool fork {get; set;}
@@ -70,7 +70,7 @@ namespace GitGrabber.Models {
 
         public int open_issues_count {get; set;}
 
-        public string license {get; set;} /* Info: Only the license key will be fetched from the requisition */
+        //public string license {get; set;} /* Info: Only the license key will be fetched from the requisition */
 
         public bool allow_forking {get; set;}
 
