@@ -1,5 +1,5 @@
-# git-grabber
-## A GitHub informations grabbing library for .NET
+# git-api-dotnet
+## A GitHub API informations grabbing library for .NET
 **TODO TABLE:**
 | Feature | State |
 | --- | ----------- |
