@@ -42,7 +42,7 @@ namespace GitGrabber.Models {
         }
 
         public List<GithubRepo> GetRepos() {
-            return new List<GithubRepo>(); //TODO: FetchUserRepos
+            return FetchUserRepos.Execute($"https://api.github.com/users/{login}/repos");
         }
     }
 }
