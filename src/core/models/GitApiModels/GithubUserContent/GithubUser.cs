@@ -37,8 +37,8 @@ namespace GitGrabber.Models {
         public string updated_at {get; set;}
 
         /* Built-in dynamic data retrieval features */
-        public List<GithubUser> GetFollowers(string followed) {
-            return FetchUserFollowers.Execute($"https://api.github.com/users/{followed}/followers");
+        public List<GithubUser> GetFollowers() {
+            return FetchUserFollowers.Execute($"https://api.github.com/users/{login}/followers");
         }
     }
 }
