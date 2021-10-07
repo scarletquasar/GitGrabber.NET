@@ -1,4 +1,4 @@
-# git-api-dotnet
+# git-grabber
 ## A GitHub API informations grabbing library for .NET
 **Feature List:**
 | Feature | State |
