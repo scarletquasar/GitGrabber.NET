@@ -12,3 +12,4 @@
 | Github Organization Repositories Fetch/Object | Not Started |
 | Github Organization Teams Fetch/Object | Not Started |
 | Github Repository Basic Fetch/Object | Working |
+| Github Emojis | Not Started |
