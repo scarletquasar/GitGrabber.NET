@@ -8,6 +8,7 @@
 | Github User Followers Fetch/Object | Working ✔ |
 | Github User Repositories Fetch/Object | Working ✔ |
 | Github User Search Fetch/Object | No Support (Yet) ❌ |
+| Github User Detailed Search Fetch/Object | No Support (Yet) ❌ |
 | Github User Organizations Fetch/Object | No Support (Yet) ❌ |
 | 🔵 **Organizations** |
 | Github Organization Basic Fetch/Object | No Support (Yet) ❌ |

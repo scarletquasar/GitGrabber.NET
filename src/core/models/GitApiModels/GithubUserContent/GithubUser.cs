@@ -35,6 +35,7 @@ namespace GitGrabber.Models {
         public int following {get; set;}
         public string created_at {get; set;}
         public string updated_at {get; set;}
+        public double score {get; set;}
 
         /* Built-in dynamic data retrieval features */
         public List<GithubUser> GetFollowers() {
