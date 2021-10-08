@@ -14,6 +14,8 @@
 | Github Organization Basic Fetch/Object | No Support (Yet) ❌ |
 | Github Organization Repositories Fetch/Object | No Support (Yet) ❌ |
 | Github Organization Teams Fetch/Object | No Support (Yet) ❌ |
+| Github Organization Search Fetch/Object | No Support (Yet) ❌ |
+| Github Organization Detailed Search Fetch/Object | No Support (Yet) ❌ |
 | 🔵 **Repositories** |
 | Github Repository Basic Fetch/Object | Working ✔ |
 | Github Repository Search Fetch/Object | No Support (Yet) ❌ |
