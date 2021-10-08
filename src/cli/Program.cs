@@ -13,7 +13,7 @@ namespace cli
             GitConnection.Connect();
 
             List<GithubUser> Htapps = GitConnection.SearchUser("balad");
-            if(Htapps.ElementAt(0) != null) Console.WriteLine(Htapps.ElementAt(0).login);
+            if(Htapps.ElementAt(0) != null) Console.WriteLine(Htapps.ElementAt(1).login);
         }
     }
 }
