@@ -44,7 +44,7 @@ namespace GitGrabber
         }
 
         public List<GithubUser> SearchUser(string search) {
-            return new FetchGithubUserSearch().
+            return new FetchGithubUserSearch().GrabObject("https://api.github.com/search/users?q=" + search);
         }
     }
 }

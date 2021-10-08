@@ -12,8 +12,8 @@ namespace cli
             GitGrabConnection GitConnection = new();
             GitConnection.Connect();
 
-            List<GithubRepo> Htapps = GitConnection.GetUser("EternalQuasar0206").GetRepos();
-            if(Htapps.ElementAt(0) != null) Console.WriteLine(Htapps.ElementAt(0).name);
+            List<GithubUser> Htapps = GitConnection.SearchUser("balad");
+            if(Htapps.ElementAt(0) != null) Console.WriteLine(Htapps.ElementAt(0).login);
         }
     }
 }
