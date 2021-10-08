@@ -8,7 +8,7 @@ namespace GitGrabber.Components {
     public class FetchGithubUserSearch {
         //TODO: Add Exception Handler
         public List<GithubUser> GrabObject(string target) {
-            return JsonSerializer.Deserialize<List<GithubUser>>(FetchData.GetString(target));
+            return JsonSerializer.Deserialize<GithubUserSearch>(FetchData.GetString(target)).items;
         }
     }
 }
