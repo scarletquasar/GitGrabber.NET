@@ -41,7 +41,6 @@ namespace GitGrabber.Models {
         public List<GithubUser> GetFollowers() {
             return FetchUserFollowers.Execute($"https://api.github.com/users/{login}/followers");
         }
-
         public List<GithubRepo> GetRepos() {
             return FetchUserRepos.Execute($"https://api.github.com/users/{login}/repos");
         }
