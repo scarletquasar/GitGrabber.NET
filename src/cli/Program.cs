@@ -3,6 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using GitGrabber;
 using GitGrabber.Models;
+
 namespace cli
 {
     class Program
@@ -12,8 +13,8 @@ namespace cli
             GitGrabConnection GitConnection = new();
             GitConnection.Connect();
 
-            List<GithubUser> Htapps = GitConnection.SearchUser("balad");
-            if(Htapps.ElementAt(0) != null) Console.WriteLine(Htapps.ElementAt(1).login);
+            GithubOrg Htapps = GitConnection.GetOrg("MeuFazTudo");
+            Console.WriteLine(Htapps.login);
         }
     }
 }

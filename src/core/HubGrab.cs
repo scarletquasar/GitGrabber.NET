@@ -52,7 +52,6 @@ namespace GitGrabber
             return OrgHandler.GrabObject("https://api.github.com/orgs/" + org_name);
         }
         
-
         /* API Searchers */
         public List<GithubUser> SearchUser(string search) {
             return UserSearchHandler.GrabObject("https://api.github.com/search/users?q=" + search);
