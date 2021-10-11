@@ -40,16 +40,17 @@ namespace GitGrabber
 
         /* Basic Getters */
         public GithubUser GetUser(string username) {
-            return new FetchGithubUser().GrabObject("https://api.github.com/users/" + username);
+            return UserHandler.GrabObject("https://api.github.com/users/" + username);
         }
 
         public GithubRepo GetRepo(string username, string reponame) {
-            return new FetchGithubRepo().GrabObject("https://api.github.com/repos/" + username + "/" + reponame);
+            return RepoHandler.GrabObject("https://api.github.com/repos/" + username + "/" + reponame);
         }
+        
 
         /* API Searchers */
         public List<GithubUser> SearchUser(string search) {
-            return new FetchGithubUserSearch().GrabObject("https://api.github.com/search/users?q=" + search);
+            return UserSearchHandler.GrabObject("https://api.github.com/search/users?q=" + search);
         }
 
         public List<GithubUser> SearchUser(string search, int per_page, int page) {
