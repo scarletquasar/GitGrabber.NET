@@ -8,6 +8,9 @@ namespace GitGrabber
 {
     public class GitGrabConnection
     {
+        /* Preset Definitions */
+        public int SearchItemsPerPage = 30;
+        public int SearchDefaultPage = 1;
         /* Singleton Definitions */
         private FetchGithubUser UserHandler = new FetchGithubUser();
         private FetchGithubRepo RepoHandler = new FetchGithubRepo();
@@ -45,6 +48,13 @@ namespace GitGrabber
 
         public List<GithubUser> SearchUser(string search) {
             return new FetchGithubUserSearch().GrabObject("https://api.github.com/search/users?q=" + search);
+        }
+
+        public List<GithubUser> SearchUser(string search, int per_page, int page) {
+            if(per_page == 0) per_page = SearchItemsPerPage;
+            if(page == 0) page = SearchDefaultPage;
+            return new FetchGithubUserSearch().
+            GrabObject($"https://api.github.com/search/users?q={search}&page={page}&per_page={per_page}");
         }
     }
 }
