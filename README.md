@@ -22,5 +22,5 @@
 | 🔵 **Misc** |
 | Github Emojis | No Support (Yet) ❌ |
 
-**Todo:**<br>
+**Todo:**
 - Add Exception Handlers to Fetchers
