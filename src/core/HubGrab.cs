@@ -14,6 +14,7 @@ namespace GitGrabber
         /* Singleton Definitions */
         private FetchGithubUser UserHandler = new FetchGithubUser();
         private FetchGithubRepo RepoHandler = new FetchGithubRepo();
+        private FetchGithubOrg OrgHandler = new FetchGithubOrg();
         private FetchGithubUserSearch UserSearchHandler = new FetchGithubUserSearch();
 
         /* Connection Definitions */
@@ -45,6 +46,10 @@ namespace GitGrabber
 
         public GithubRepo GetRepo(string username, string reponame) {
             return RepoHandler.GrabObject("https://api.github.com/repos/" + username + "/" + reponame);
+        }
+
+        public GithubOrg GetOrg(string org_name) {
+            return OrgHandler.GrabObject("https://api.github.com/orgs/" + org_name);
         }
         
 
