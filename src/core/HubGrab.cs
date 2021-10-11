@@ -38,6 +38,7 @@ namespace GitGrabber
             }
         }
 
+        /* Basic Getters */
         public GithubUser GetUser(string username) {
             return new FetchGithubUser().GrabObject("https://api.github.com/users/" + username);
         }
@@ -46,6 +47,7 @@ namespace GitGrabber
             return new FetchGithubRepo().GrabObject("https://api.github.com/repos/" + username + "/" + reponame);
         }
 
+        /* API Searchers */
         public List<GithubUser> SearchUser(string search) {
             return new FetchGithubUserSearch().GrabObject("https://api.github.com/search/users?q=" + search);
         }
