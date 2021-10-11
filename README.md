@@ -21,5 +21,6 @@
 | Github Repository Search Fetch/Object | No Support (Yet) ❌ |
 | 🔵 **Misc** |
 | Github Emojis | No Support (Yet) ❌ |
+
 **Todo:**<br>
 - Add Exception Handlers to Fetchers
