@@ -11,7 +11,7 @@
 | Github User Detailed Search Fetch/Object | Test Pendent ⛔ |
 | Github User Organizations Fetch/Object | No Support (Yet) ❌ |
 | 🔵 **Organizations** |
-| Github Organization Basic Fetch/Object | No Support (Yet) ❌ |
+| Github Organization Basic Fetch/Object | Test Pendent ⛔ |
 | Github Organization Repositories Fetch/Object | No Support (Yet) ❌ |
 | Github Organization Teams Fetch/Object | No Support (Yet) ❌ |
 | Github Organization Search Fetch/Object | No Support (Yet) ❌ |
