@@ -1,5 +1,6 @@
 # git-grabber
 ## A GitHub API informations grabbing library for .NET
+### Current version: Alpha Snapshot [2021/10]
 **Feature List:**
 | Feature | State |
 | --- | ----------- |
