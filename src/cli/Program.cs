@@ -13,8 +13,8 @@ namespace cli
             GitGrabConnection GitConnection = new();
             GitConnection.Connect();
 
-            GithubOrg Htapps = GitConnection.GetOrg("MeuFazTudo");
-            Console.WriteLine(Htapps.login);
+            List<GithubUser> Htapps = GitConnection.SearchUser("balad", 2, 2);
+            if(Htapps.ElementAt(0) != null) Console.WriteLine(Htapps.ElementAt(1).login);
         }
     }
 }
