@@ -5,7 +5,7 @@
 | Feature | State |
 | --- | ----------- |
 | 🔵 **User** |
-| Gihub User | Working ✔ |
+| Gihub User | Working ✔ Have Limitations ⚠ |
 | Github User Followers | Working ✔ |
 | Github User Repositories | Working ✔ |
 | Github User Search | Working ✔ |
