@@ -27,8 +27,6 @@ namespace GitGrabber
         public bool Connect() {
             connection = ConnectionWorker.Connect();
             connection_success = connection.connection_success;
-            Console.Write(connection.connection_success);
-            Console.Write(connection_success);
             return connection.connection_success;
         }
 
