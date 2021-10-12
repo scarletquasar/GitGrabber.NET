@@ -10,7 +10,7 @@
 | Github User Repositories | Working ✔ |
 | Github User Search | Working ✔ |
 | Github User Detailed Search | Working ✔ |
-| Github User Organizations | Test Pendent ⛔ |
+| Github User Organizations | Working ✔ |
 | 🔵 **Organizations** |
 | Github Organization | Working ✔ |
 | Github Organization Repositories | No Support (Yet) ❌ |
