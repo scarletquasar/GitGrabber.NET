@@ -58,11 +58,14 @@ GitConnection.Connect();
 Currently the methods available in GitGrabber are:
 
 ```cs
-GithubApiResponse ApiResponse = GitConnection.GithubApi(); //Returns the Github API default lobby object
+//Returns the Github API default lobby object
+GithubApiResponse ApiResponse = GitConnection.GithubApi(); 
 
-GithubUser MyUser = GitConnection.GetUser("username"); //Returns a Github User as object
+//Returns a Github User as object
+GithubUser MyUser = GitConnection.GetUser("username"); 
 
-GithubRepo MyRepo = GitConnection.GetRepo("Owner username", "Repo name"); //Returns a Github Repository as object
+//Returns a Github Repository as object
+GithubRepo MyRepo = GitConnection.GetRepo("Owner username", "Repo name"); 
 ```
 ## TODO
 - Develop Command Line Interface utility
