@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using GitGrabber.Components;
+
 namespace GitGrabber.Models {
     public class GithubOrg {
         public string login {get; set;}
@@ -23,10 +26,10 @@ namespace GitGrabber.Models {
         public string created_at {get; set;}
         public string updated_at {get; set;}
         public string type {get; set;}
-        
+
         /* Built-in dynamic data retrieval features */
-        public List<GithubUser> GetFollowers() {
-            return FetchUserFollowers.Execute($"https://api.github.com/users/{login}/followers");
+        public List<GithubRepo> GetRepos() {
+            return FetchGithubOrgRepos.Execute($"https://api.github.com/orgs/{login}/repos");
         }
     }
 }
