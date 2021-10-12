@@ -3,8 +3,8 @@ namespace GitGrabber.Models {
         public int id {get; set;}
         public string node_id {get; set;}
         public string name {get; set;}
-        //public bool @private {get; set;} /* Info: private field of API requisition */
-        //public string owner {get; set;} /* Info: Only the username will be fetched from the requisition */
+        //public bool private {get; set;} /* Info: Disabled due to major issues */
+        //public string owner {get; set;} /* Todo: Enable with GithubUser model */
         public string html_url {get; set;}
         public string description {get; set;}
         public bool fork {get; set;}

@@ -26,7 +26,7 @@ namespace GitGrabber.Models {
         public string blog {get; set;}
         public string location {get; set;}
         public string email {get; set;} = "no";
-        public bool hireable {get; set;} = false;
+        //public bool hireable {get; set;} = false; /* Info: Disabled due to major issues */
         public string bio {get; set;}
         public string twitter_username {get; set;}
         public int public_repos {get; set;}
