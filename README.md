@@ -5,6 +5,9 @@
 </h1>
 <p align="center">A GitHub API informations grabbing library for .NET</p>
 
+## Usage
+---
+
 ## Features
 | Feature | State |
 | --- | ----------- |
