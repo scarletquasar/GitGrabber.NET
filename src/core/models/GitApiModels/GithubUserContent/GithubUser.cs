@@ -44,5 +44,9 @@ namespace GitGrabber.Models {
         public List<GithubRepo> GetRepos() {
             return FetchUserRepos.Execute($"https://api.github.com/users/{login}/repos");
         }
+
+        public List<GithubOrg> GetOrgs() {
+            
+        }
     }
 }

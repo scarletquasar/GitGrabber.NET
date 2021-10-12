@@ -5,21 +5,21 @@
 | Feature | State |
 | --- | ----------- |
 | 🔵 **User** |
-| Gihub User Basic Fetch/Object | Working ✔ |
-| Github User Followers Fetch/Object | Working ✔ |
-| Github User Repositories Fetch/Object | Working ✔ |
-| Github User Search Fetch/Object | Working ✔ |
-| Github User Detailed Search Fetch/Object | Working ✔ |
-| Github User Organizations Fetch/Object | No Support (Yet) ❌ |
+| Gihub User | Working ✔ |
+| Github User Followers | Working ✔ |
+| Github User Repositories | Working ✔ |
+| Github User Search | Working ✔ |
+| Github User Detailed Search | Working ✔ |
+| Github User Organizations | No Support (Yet) ❌ |
 | 🔵 **Organizations** |
-| Github Organization Basic Fetch/Object | Working ✔ |
-| Github Organization Repositories Fetch/Object | No Support (Yet) ❌ |
-| Github Organization Teams Fetch/Object | No Support (Yet) ❌ |
-| Github Organization Search Fetch/Object | No Support (Yet) ❌ |
-| Github Organization Detailed Search Fetch/Object | No Support (Yet) ❌ |
+| Github Organization | Working ✔ |
+| Github Organization Repositories | No Support (Yet) ❌ |
+| Github Organization Teams | No Support (Yet) ❌ |
+| Github Organization Search | No Support (Yet) ❌ |
+| Github Organization Detailed Search | No Support (Yet) ❌ |
 | 🔵 **Repositories** |
-| Github Repository Basic Fetch/Object | Working ✔ |
-| Github Repository Search Fetch/Object | No Support (Yet) ❌ |
+| Github Repository | Working ✔ |
+| Github Repository Search | No Support (Yet) ❌ |
 | 🔵 **Misc** |
 | Github Emojis | No Support (Yet) ❌ |
 
