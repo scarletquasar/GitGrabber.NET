@@ -14,12 +14,8 @@
 | 🔵 **Organizations** |
 | Github Organization | Working ✔ |
 | Github Organization Repositories | Test Pendent ⛔ |
-| Github Organization Teams | No Support (Yet) ❌ |
-| Github Organization Search | No Support (Yet) ❌ |
-| Github Organization Detailed Search | No Support (Yet) ❌ |
 | 🔵 **Repositories** |
 | Github Repository | Working ✔ |
-| Github Repository Search | No Support (Yet) ❌ |
 | 🔵 **Misc** |
 | Github Emojis | No Support (Yet) ❌ |
 
