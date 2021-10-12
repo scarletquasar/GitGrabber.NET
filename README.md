@@ -1,4 +1,8 @@
-<h1 align="center">GitGrabber <img src="https://i.imgur.com/JnSjFjJ.png" width="75px"></h1>
+<h1 align="center">
+  <img src="https://i.imgur.com/JnSjFjJ.png" width="75px">
+  <br>
+  GitGrabber
+</h1>
 <p align="center">A GitHub API informations grabbing library for .NET</p>
 
 ## Features
