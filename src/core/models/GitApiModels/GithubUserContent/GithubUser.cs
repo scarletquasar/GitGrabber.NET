@@ -46,7 +46,7 @@ namespace GitGrabber.Models {
         }
 
         public List<GithubOrg> GetOrgs() {
-            
+            return FetchUserOrgs.Execute($"https://api.github.com/users/{login}/orgs");
         }
     }
 }
