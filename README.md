@@ -6,7 +6,8 @@
 <p align="center">A GitHub API informations grabbing library for .NET</p>
 
 ## Usage
-To get started with GitGrabber you have to install the package manually. 
+To get started with GitGrabber you have to install the package manually adding the `git-grabber.dll` in the project and
+a reference in the *.csproj:
 ```html
   <ItemGroup>
     <Reference Include="git-grabber">
