@@ -17,6 +17,9 @@ a reference in the *.csproj:
 </ItemGroup>
 ```
 
+## Functions
+The purpose of the library is to provide ways to quickly deserialize information from the Github API, in this way you just use a function and the data is automatically converted into usable object instances.
+
 ## Features
 | Feature | State |
 | --- | ----------- |
