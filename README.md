@@ -60,21 +60,35 @@ Currently the methods available in GitGrabber are:
 ```cs
 //Returns the Github API default lobby object
 GithubApiResponse ApiResponse = GitConnection.GithubApi(); 
-
+```
+```cs
 //Returns a Github User as object
 GithubUser MyUser = GitConnection.GetUser("username"); 
+```
 
+```cs
 //Returns a Github Repository as object
 GithubRepo MyRepo = GitConnection.GetRepo("Owner username", "Repo name"); 
+```
 
+```cs
 //Returns a Github Organization as object
 GithubOrg MyOrg = GitConnection.GetOrg("Org name");
+```
 
+```cs
 //Performs a quick search and brings up the results in a GithubUser list
 List<GithubUser> UserSearch = GitConnection.SearchUser("search");
+```
 
+```cs
 //Performs a detailed search and brings up the results in a GithubUser list
 List<GithubUser> UserSearch = GitConnection.SearchUser("search", (int)"max results/page", (int)"page");
+```
+
+```cs
+//Return emoji links directly from Github api
+Dictionary<string, string> Emojis = GitConnection.Emojis();
 ```
 ## TODO
 - Develop Command Line Interface utility
