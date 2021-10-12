@@ -7,8 +7,13 @@
 
 ## Usage
 To get started with GitGrabber you have to install the package manually. 
-```
-dsadsad
+```html
+  <ItemGroup>
+    <Reference Include="git-grabber">
+      <HintPath>git-grabber.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion> 
+    </Reference>
+  </ItemGroup>
 ```
 
 ## Features
