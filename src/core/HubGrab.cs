@@ -65,5 +65,9 @@ namespace GitGrabber
         }
 
         /* Emoji API */
+
+        public Dictionary<string, string> Emojis() {
+            return new FetchEmojiList().GrabObject("https://api.github.com/emojis");
+        }
     }
 }

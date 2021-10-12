@@ -17,7 +17,7 @@
 | 🔵 **Repositories** |
 | Github Repository | Working ✔ |
 | 🔵 **Misc** |
-| Github Emojis | No Support (Yet) ❌ |
+| Github Emojis | Test Pendent ⛔ |
 
 **Todo:**
 - Develop Command Line Interface utility
