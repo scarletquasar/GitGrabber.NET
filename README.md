@@ -74,7 +74,7 @@ GithubOrg MyOrg = GitConnection.GetOrg("Org name");
 List<GithubUser> UserSearch = GitConnection.SearchUser("search");
 
 //Performs a detailed search and brings up the results in a GithubUser list
-List<GithubUser> UserSearch = GitConnection.SearchUser("search", (int)/*Results per page*/, (int)/* Page Number */);
+List<GithubUser> UserSearch = GitConnection.SearchUser("search", (int)"max results/page", (int)"page");
 ```
 ## TODO
 - Develop Command Line Interface utility
