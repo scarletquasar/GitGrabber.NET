@@ -1,10 +1,10 @@
 using GitGrabber.Models;
 using System.Text.Json;
+using System.Collections.Generic;
 namespace GitGrabber.Components {
-    public class FetchUserOrgs {
-        //TODO: Add Exception Handler
-        public GithubOrg GrabObject(string target) {
-            return JsonSerializer.Deserialize<GithubOrg>(FetchData.GetString(target));
+    public static class FetchUserOrgs {
+        public static List<GithubOrg> Execute(string target) {
+            return JsonSerializer.Deserialize<List<GithubOrg>>(FetchData.GetString(target));
         }
     }
 }
