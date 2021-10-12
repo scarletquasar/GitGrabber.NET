@@ -13,8 +13,8 @@ namespace GitGrabber.Models {
         public string avatar_url {get; set;}
         public string description {get; set;}
         public bool is_verified {get; set;}
-        public bool has_organization_projects {get; set;}
-        public bool has_repository_projects {get; set;}
+        public bool has_organization_projects {get; set;} = false;
+        public bool has_repository_projects {get; set;} = false;
         public int public_repos {get; set;}
         public int public_gists {get; set;}
         public int followers {get; set;}

@@ -13,7 +13,7 @@ namespace cli
             GitGrabConnection GitConnection = new();
             GitConnection.Connect();
 
-            List<GithubUser> Htapps = GitConnection.SearchUser("balad", 2, 2);
+            List<GithubOrg> Htapps = GitConnection.GetUser("sebastienros").GetOrgs();
             if(Htapps.ElementAt(0) != null) Console.WriteLine(Htapps.ElementAt(1).login);
         }
     }

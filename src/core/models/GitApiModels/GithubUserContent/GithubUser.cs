@@ -20,13 +20,13 @@ namespace GitGrabber.Models {
         public string events_url {get; set;}
         public string received_events_url {get; set;}      
         public string type {get; set;} 
-        public bool site_admin {get; set;}
+        public bool site_admin {get; set;} = false;
         public string name {get; set;}
         public string company {get; set;}
         public string blog {get; set;}
         public string location {get; set;}
         public string email {get; set;} = "no";
-        public bool hireable {get; set;}
+        public bool hireable {get; set;} = false;
         public string bio {get; set;}
         public string twitter_username {get; set;}
         public int public_repos {get; set;}

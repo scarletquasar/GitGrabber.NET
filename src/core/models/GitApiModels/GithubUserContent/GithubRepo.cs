@@ -57,15 +57,15 @@ namespace GitGrabber.Models {
         public int stargazers_count {get; set;}
         public int watchers_count {get; set;}
         public string language {get; set;}
-        public bool has_issues {get; set;}
-        public bool has_projects {get; set;}
-        public bool has_downloads {get; set;}
-        public bool has_wiki {get; set;}
-        public bool has_pages {get; set;}
+        public bool has_issues {get; set;} = false;
+        public bool has_projects {get; set;} = false;
+        public bool has_downloads {get; set;} = false;
+        public bool has_wiki {get; set;} = false;
+        public bool has_pages {get; set;} = false;
         public int forks_count {get; set;}
         public string mirror_url {get; set;}
-        public bool archived {get; set;}
-        public bool disabled {get; set;}
+        public bool archived {get; set;} = false;
+        public bool disabled {get; set;} = false;
         public int open_issues_count {get; set;}
         //public string license {get; set;} /* Info: Only the license key will be fetched from the requisition */
         public bool allow_forking {get; set;}
