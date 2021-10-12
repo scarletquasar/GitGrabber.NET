@@ -15,7 +15,7 @@
 | Github Organization | Working ✔ |
 | Github Organization Repositories | Working ✔ |
 | 🔵 **Repositories** |
-| Github Repository | Working ✔ |
+| Github Repository | Working ✔ Have Limitations ⚠ |
 | 🔵 **Misc** |
 | Github Emojis | Working ✔ |
 
