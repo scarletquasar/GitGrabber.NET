@@ -6,7 +6,10 @@
 <p align="center">A GitHub API informations grabbing library for .NET</p>
 
 ## Usage
----
+To get started with GitGrabber you have to install the package manually. 
+```
+dsadsad
+```
 
 ## Features
 | Feature | State |
