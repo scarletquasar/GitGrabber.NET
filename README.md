@@ -13,7 +13,7 @@
 | Github User Organizations | Working ✔ |
 | 🔵 **Organizations** |
 | Github Organization | Working ✔ |
-| Github Organization Repositories | Test Pendent ⛔ |
+| Github Organization Repositories | Working ✔ |
 | 🔵 **Repositories** |
 | Github Repository | Working ✔ |
 | 🔵 **Misc** |
