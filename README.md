@@ -45,6 +45,10 @@ You can import GitGrabber to your code file using the namespace imports:
 using GitGrabber;
 using GitGrabber.Models;
 ```
+
+### Using GitGrabber
+To connect to the Github API you must instantiate a new `GitGrabConnection` and use the `Connect()` functionality.
+
 ## TODO
 - Develop Command Line Interface utility
 - Add Exception Handlers to Fetchers
