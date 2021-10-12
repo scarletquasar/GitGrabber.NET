@@ -3,7 +3,7 @@
   <br>
   GitGrabber
 </h1>
-<p align="center">A GitHub API informations grabbing library for .NET</p>
+<p align="center">Get data directly from the official GitHub API in a fast and practical way and use it directly in your .NET projects.</p>
 
 ## Usage
 To get started with GitGrabber you have to install the package manually adding the `git-grabber.dll` in the project and
