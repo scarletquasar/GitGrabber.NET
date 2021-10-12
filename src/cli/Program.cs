@@ -16,8 +16,8 @@ namespace cli
             GitGrabConnection GitConnection = new();
             GitConnection.Connect();
 
-            var Emojos = GitConnection.Emojis();
-            Console.WriteLine(Emojos["8ball"]);
+            List<GithubRepo> Htapps = GitConnection.GetOrg("aspnet").GetRepos();
+            Console.WriteLine(Htapps.ElementAt(1).name);
         }
     }
 }
