@@ -49,6 +49,10 @@ using GitGrabber.Models;
 ### Using GitGrabber
 To connect to the Github API you must instantiate a new `GitGrabConnection` and use the `Connect()` functionality.
 
+```cs
+GitGrabConnection GitConnection = new();
+GitConnection.Connect();
+```
 ## TODO
 - Develop Command Line Interface utility
 - Add Exception Handlers to Fetchers
