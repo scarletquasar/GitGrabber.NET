@@ -63,5 +63,7 @@ namespace GitGrabber
             return new FetchGithubUserSearch().
             GrabObject($"https://api.github.com/search/users?q={search}&page={page}&per_page={per_page}");
         }
+
+        /* Emoji API */
     }
 }
