@@ -9,12 +9,12 @@
 To get started with GitGrabber you have to install the package manually adding the `git-grabber.dll` in the project and
 a reference in the *.csproj:
 ```html
-  <ItemGroup>
-    <Reference Include="git-grabber">
-      <HintPath>git-grabber.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion> 
-    </Reference>
-  </ItemGroup>
+<ItemGroup>
+  <Reference Include="git-grabber">
+    <HintPath>git-grabber.dll</HintPath>
+    <SpecificVersion>False</SpecificVersion> 
+  </Reference>
+</ItemGroup>
 ```
 
 ## Features
