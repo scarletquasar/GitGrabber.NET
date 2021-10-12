@@ -15,7 +15,6 @@ namespace cli
             
             GitGrabConnection GitConnection = new();
             GitConnection.Connect();
-
             List<GithubRepo> Htapps = GitConnection.GetOrg("aspnet").GetRepos();
             Console.WriteLine(Htapps.ElementAt(1).name);
         }

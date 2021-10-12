@@ -8,6 +8,7 @@ namespace GitGrabber
 {
     public class GitGrabConnection
     {
+        private bool connection_success = false;
         /* Preset Definitions */
         public int SearchItemsPerPage = 30;
         public int SearchDefaultPage = 1;
@@ -26,12 +27,13 @@ namespace GitGrabber
         /* Starts the connection. Method used to avoid different errors that can have different causes. */
         public bool Connect() {
             connection = ConnectionWorker.Connect();
+            connection_success = connection.connection_success;
             return connection.connection_success;
         }
 
         /* Connects to the main api and gets a GithubApiResponse object with all the returns from the original API. */
         public GithubApiResponse GithubApi() {
-            if(connection.connection_success) {
+            if(connection_success) {
                 return ConnectionWorker.Fetch();
             }
             else {
@@ -41,7 +43,7 @@ namespace GitGrabber
 
         /* Basic Getters */
         public GithubUser GetUser(string username) {
-            if(connection.connection_success) {
+            if(connection_success) {
                 return UserHandler.GrabObject("https://api.github.com/users/" + username);
             }
             else {
@@ -50,7 +52,7 @@ namespace GitGrabber
         }
 
         public GithubRepo GetRepo(string username, string reponame) {
-            if(connection.connection_success) {
+            if(connection_success) {
                 return RepoHandler.GrabObject("https://api.github.com/repos/" + username + "/" + reponame);
             }
             else {
@@ -59,7 +61,7 @@ namespace GitGrabber
         }
 
         public GithubOrg GetOrg(string org_name) {
-            if(connection.connection_success) {
+            if(connection_success) {
                 return OrgHandler.GrabObject("https://api.github.com/orgs/" + org_name);
             }
             else {
@@ -69,7 +71,7 @@ namespace GitGrabber
         
         /* API Searchers */
         public List<GithubUser> SearchUser(string search) {
-            if(connection.connection_success) {
+            if(connection_success) {
                 return UserSearchHandler.GrabObject("https://api.github.com/search/users?q=" + search);
             }
             else {
@@ -78,7 +80,7 @@ namespace GitGrabber
         }
 
         public List<GithubUser> SearchUser(string search, int per_page, int page) {
-            if(connection.connection_success) {
+            if(connection_success) {
                 if(per_page == 0) per_page = SearchItemsPerPage;
                 if(page == 0) page = SearchDefaultPage;
                 return new FetchGithubUserSearch().
@@ -92,7 +94,7 @@ namespace GitGrabber
         /* Emoji API */
 
         public Dictionary<string, string> Emojis() {
-            if(connection.connection_success) {
+            if(connection_success) {
                 return new FetchEmojiList().GrabObject("https://api.github.com/emojis");
             }
             else {
