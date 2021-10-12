@@ -6,7 +6,7 @@
 <p align="center">Get data directly from the official GitHub API in a fast and practical way and use it directly in your .NET projects.</p>
 
 ## Usage
-To get started with GitGrabber you have to install the package manually adding the `git-grabber.dll` in the project and
+To get started with GitGrabber you have to install the package manually adding the `git-grabber.dll` (of /out/ folder in the repository) in the project and
 a reference in the *.csproj:
 ```html
 <ItemGroup>
