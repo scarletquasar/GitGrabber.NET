@@ -20,8 +20,7 @@ namespace GitGrabber
 
         /* Connection Definitions */
         private GithubConnection connection = new GithubConnection() {
-            connection_success = false,
-            connection_latency = 0
+            connection_success = false
         };
 
         /* Starts the connection. Method used to avoid different errors that can have different causes. */

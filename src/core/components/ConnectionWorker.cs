@@ -3,22 +3,24 @@ using System.Net.NetworkInformation;
 using System.Net;
 using System.IO;
 using System.Text.Json;
+using System.Linq;
 
 namespace GitGrabber.Components {
     public static class ConnectionWorker {
         public static GithubConnection Connect() {
             try {
-                    var pinger = new Ping();
-                    PingReply reply = pinger.Send("api.github.com");
-                    var pingable = reply.Status == IPStatus.Success;
-                    var latency = reply.RoundtripTime;
-                    
+                var result = Fetch();
+
+                if(result.authorizations_url != null && result.authorizations_url != "") {
                     return new GithubConnection() {
-                        connection_success = pingable,
-                        connection_latency = latency
+                        connection_success = true
                     };
+                }
+                else {
+                    return new GithubConnection();
+                }
             }
-            catch (PingException)
+            catch
             {
                 return new GithubConnection();
             }
