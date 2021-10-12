@@ -38,8 +38,7 @@ a reference in the *.csproj:
 ## Functions
 The purpose of the library is to provide ways to quickly deserialize information from the Github API, in this way you just use a function and the data is automatically converted into usable object instances.
 
-<br>
 
-**Todo:**
+## TODO
 - Develop Command Line Interface utility
 - Add Exception Handlers to Fetchers
