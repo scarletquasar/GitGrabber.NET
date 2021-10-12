@@ -20,4 +20,5 @@
 | Github Emojis | No Support (Yet) ❌ |
 
 **Todo:**
+- Develop Command Line Interface utility
 - Add Exception Handlers to Fetchers
