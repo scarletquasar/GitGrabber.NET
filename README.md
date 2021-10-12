@@ -53,6 +53,17 @@ To connect to the Github API you must instantiate a new `GitGrabConnection` and 
 GitGrabConnection GitConnection = new();
 GitConnection.Connect();
 ```
+
+### GitGrabber Methods
+Currently the methods available in GitGrabber are:
+
+```cs
+GithubApiResponse ApiResponse = GitConnection.GithubApi(); //Returns the Github API default lobby object
+
+GithubUser MyUser = GitConnection.GetUser("username"); //Returns a Github User as object
+
+GithubRepo MyRepo = GitConnection.GetRepo("Owner username", "Repo name"); //Returns a Github Repository as object
+```
 ## TODO
 - Develop Command Line Interface utility
 - Add Exception Handlers to Fetchers
