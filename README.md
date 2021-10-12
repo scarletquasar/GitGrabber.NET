@@ -66,6 +66,15 @@ GithubUser MyUser = GitConnection.GetUser("username");
 
 //Returns a Github Repository as object
 GithubRepo MyRepo = GitConnection.GetRepo("Owner username", "Repo name"); 
+
+//Returns a Github Organization as object
+GithubOrg MyOrg = GitConnection.GetOrg("Org name");
+
+//Performs a quick search and brings up the results in a GithubUser list
+List<GithubUser> UserSearch = GitConnection.SearchUser("search");
+
+//Performs a detailed search and brings up the results in a GithubUser list
+List<GithubUser> UserSearch = GitConnection.SearchUser("search", (int)/*Results per page*/, (int)/* Page Number */);
 ```
 ## TODO
 - Develop Command Line Interface utility
