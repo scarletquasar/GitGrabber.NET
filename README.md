@@ -3,7 +3,11 @@
   <br>
   GitGrabber
 </h1>
-<p align="center">Get data directly from the official GitHub API in a fast and practical way and use it directly in your .NET projects.</p>
+<p align="center">
+Get data directly from the official GitHub API in a fast and practical way and use it directly in your .NET projects.
+<br>
+[![CodeFactor](https://www.codefactor.io/repository/github/eternalquasar0206/git-grabber/badge/main)](https://www.codefactor.io/repository/github/eternalquasar0206/git-grabber/overview/main)
+</p>
 
 ## Development
 | Version | Branch |
