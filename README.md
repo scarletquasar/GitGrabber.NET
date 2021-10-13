@@ -13,6 +13,12 @@ Get data directly from the official GitHub API in a fast and practical way and u
 </p>
 </center>
 
+## Support
+| Version | Target |
+| --- | ----------- |
+| Development | .NET Standard 2.0+ |
+| 1.0.0 | .NET Standard 2.0+ |
+
 ## Development
 | Version | Branch |
 | --- | ----------- |
