@@ -97,5 +97,8 @@ List<GithubUser> UserSearch = GitConnection.SearchUser("search", (int)"max resul
 Dictionary<string, string> Emojis = GitConnection.Emojis();
 ```
 ## TODO
+- Fix Problematic Model Fields in User/Repo
+- Add Public Gists Fetch Support
+- Add Authenticated User Operations Support
 - Develop Command Line Interface utility
 - Add Exception Handlers to Fetchers
