@@ -7,6 +7,7 @@
 
 ## Development
 | Version | Branch |
+| --- | ----------- |
 | Development | Main |
 | 1.0.0 | ver1.0.0 |
 
