@@ -6,8 +6,10 @@
 <p align="center">Get data directly from the official GitHub API in a fast and practical way and use it directly in your .NET projects.</p>
 
 ## Development
-| Feature | State |
+| Version | Branch |
 | --- | ----------- |
+| Development | Main |
+| 1.0.0 | ver1.0.0 |
 
 ## Usage
 To get started with GitGrabber you have to install the package manually adding the `git-grabber.dll` (of /out/ folder in the repository) in the project and
