@@ -50,7 +50,7 @@ a reference in the *.csproj:
 | Github User Search | Working ✔ |
 | Github User Detailed Search | Working ✔ |
 | Github User Organizations | Working ✔ |
-| Github User Gists | Test Pendent ⛔ |
+| Github User Gists | Not Started ❌ |
 | 🔵 **Organizations** |
 | Github Organization | Working ✔ |
 | Github Organization Repositories | Working ✔ |
@@ -59,7 +59,7 @@ a reference in the *.csproj:
 | 🔵 **Misc** |
 | Github Emojis | Working ✔ |
 | 🔵 **Gists** |
-| Gihub Gist | Test Pendent ⛔ |
+| Gihub Gist + Public Gists List | Working ✔ |
 
 ## Functions
 The purpose of the library is to provide ways to quickly deserialize information from the Github API, in this way you just use a function and the data is automatically converted into usable object instances.

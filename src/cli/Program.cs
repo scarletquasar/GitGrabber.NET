@@ -15,8 +15,8 @@ namespace cli
             
             GitGrabConnection GitConnection = new();
             GitConnection.Connect();
-            GithubRepo Htapps = GitConnection.GetRepo("EternalQuasar0206", "htapps");
-            Console.WriteLine(Htapps.owner["id"]);
+            List<GithubGist> Htapps = GitConnection.GetPublicGists();
+            Console.WriteLine(Htapps.ElementAt(0).url);
         }
     }
 }
