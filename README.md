@@ -17,7 +17,7 @@ Get data directly from the official GitHub API in a fast and practical way and u
 | Version | Target |
 | --- | ----------- |
 | Development | .NET Standard 2.0+ |
-| 1.0.0 | .NET Standard 2.0+ |
+| 1.x.x | .NET Standard 2.0+ |
 
 ## Development
 
@@ -26,6 +26,7 @@ Warning: You may use the last stable release <img src="https://shields.io/github
 | Version | Branch |
 | --- | ----------- |
 | Development | Main |
+| 1.1.0 | ver1.1.0 |
 | 1.0.0 | ver1.0.0 |
 
 ## Usage
