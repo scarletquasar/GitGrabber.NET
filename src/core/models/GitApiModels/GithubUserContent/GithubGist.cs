@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
+using GitGrabber.Components;
 
 namespace GitGrabber.Models {
     public class GithubGist {
@@ -16,9 +18,11 @@ namespace GitGrabber.Models {
         public string updated_at { get; set; }
         public string description { get; set; }
         public int comments { get; set; }
-        public string user { get; set; } /* Possibly Nullable */
+
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string user { get; set; }
         public string comments_url { get; set; }
-        public GithubUser owner {get; set;}
+        public GithubUser owner { get; set; }
         public bool truncated { get; set; }
     }
 }
