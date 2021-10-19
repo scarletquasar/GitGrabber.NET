@@ -94,6 +94,11 @@ GithubUser MyUser = GitConnection.GetUser("username");
 ```
 
 ```cs
+//Returns the Github User list of Gists
+List<GithubGist> UserPublicGists = GitConnection.GetGists(); 
+```
+
+```cs
 //Returns a Github Repository as object
 GithubRepo MyRepo = GitConnection.GetRepo("Owner username", "Repo name"); 
 ```
@@ -116,6 +121,16 @@ List<GithubUser> UserSearch = GitConnection.SearchUser("search", (int)"max resul
 ```cs
 //Return emoji links directly from Github api
 Dictionary<string, string> Emojis = GitConnection.Emojis();
+```
+
+```cs
+//Get the list of public gists (managed by API)
+List<GithubGist> PublicGists = GitConnection.GetPublicGists();
+```
+
+```cs
+//Get a Github Gist by id
+GithubGist GistById = GitConnection.GetGist("id");
 ```
 ## Changelog
 - Added User Gists Fetcher
