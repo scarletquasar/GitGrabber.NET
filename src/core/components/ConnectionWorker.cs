@@ -1,9 +1,7 @@
 using GitGrabber.Models;
-using System.Net.NetworkInformation;
 using System.Net;
 using System.IO;
 using System.Text.Json;
-using System.Linq;
 
 namespace GitGrabber.Components {
     public static class ConnectionWorker {

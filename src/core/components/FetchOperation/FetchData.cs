@@ -1,7 +1,6 @@
-using GitGrabber.Models;
 using System.Net;
 using System.IO;
-using System;
+
 namespace GitGrabber.Components {
     public class FetchData {
         //TODO: Add Exception Handler

@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using GitGrabber.Components;
 
 namespace GitGrabber.Models {
     public class GithubGist {

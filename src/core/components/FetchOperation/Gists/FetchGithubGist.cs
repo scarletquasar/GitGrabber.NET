@@ -1,6 +1,5 @@
 using GitGrabber.Models;
 using System.Text.Json;
-using System.Collections.Generic;
 
 namespace GitGrabber.Components {
     public static class FetchGithubGist {
