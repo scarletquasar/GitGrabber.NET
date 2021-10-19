@@ -14,9 +14,9 @@ namespace cli
             with the main project (core) of the application which can be found under "src/core". */
             
             GitGrabConnection GitConnection = new();
-            //GitConnection.Connect();
-            List<GithubRepo> Htapps = GitConnection.GetOrg("aspnet").GetRepos();
-            Console.WriteLine(Htapps.ElementAt(1).name);
+            GitConnection.Connect();
+            GithubRepo Htapps = GitConnection.GetRepo("EternalQuasar0206", "htapps");
+            Console.WriteLine(Htapps.owner["id"]);
         }
     }
 }

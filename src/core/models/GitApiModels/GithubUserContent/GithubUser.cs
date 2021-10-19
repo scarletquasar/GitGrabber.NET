@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 using GitGrabber.Components;
 
 namespace GitGrabber.Models {
@@ -25,7 +26,9 @@ namespace GitGrabber.Models {
         public string company { get; set; }
         public string blog { get; set; }
         public string location { get; set; }
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public string email { get; set; }
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public bool? hireable { get; set; }
         public string bio { get; set; }
         public string twitter_username { get; set; }
