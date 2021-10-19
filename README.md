@@ -116,7 +116,6 @@ Dictionary<string, string> Emojis = GitConnection.Emojis();
 - Enabled "hireable" and "email" from GithubUser model as nullable beings
 
 ## TODO
-- Fix Problematic Model Fields in User/Repo
 - Add Public Gists Fetch Support
 - Add Authenticated User Operations Support
 - Develop Command Line Interface utility
