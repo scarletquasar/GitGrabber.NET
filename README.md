@@ -41,9 +41,9 @@ a reference in the *.csproj:
 | Feature | State |
 | --- | ----------- |
 | 🔵 **User** |
-| Gihub User | Working ✔ Have Limitations ⚠ |
+| Gihub User | Working ✔ ⛔ Test Pendent |
 | Github User Followers | Working ✔ |
-| Github User Repositories | Working ✔ |
+| Github User Repositories | Working ✔ ⛔ Test Pendent |
 | Github User Search | Working ✔ |
 | Github User Detailed Search | Working ✔ |
 | Github User Organizations | Working ✔ |
