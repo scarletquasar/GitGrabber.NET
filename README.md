@@ -50,6 +50,7 @@ a reference in the *.csproj:
 | Github User Search | Working ✔ |
 | Github User Detailed Search | Working ✔ |
 | Github User Organizations | Working ✔ |
+| Github User Gists | Test Pendent ⛔ |
 | 🔵 **Organizations** |
 | Github Organization | Working ✔ |
 | Github Organization Repositories | Working ✔ |
@@ -57,6 +58,8 @@ a reference in the *.csproj:
 | Github Repository | Working ✔ |
 | 🔵 **Misc** |
 | Github Emojis | Working ✔ |
+| 🔵 **Gists** |
+| Gihub Gist | Test Pendent ⛔ |
 
 ## Functions
 The purpose of the library is to provide ways to quickly deserialize information from the Github API, in this way you just use a function and the data is automatically converted into usable object instances.
@@ -119,7 +122,6 @@ Dictionary<string, string> Emojis = GitConnection.Emojis();
 - Enabled "hireable" and "email" from GithubUser model as nullable beings
 
 ## TODO
-- Add Public Gists Fetch Support
 - Add Authenticated User Operations Support
 - Develop Command Line Interface utility
 - Add Exception Handlers to Fetchers

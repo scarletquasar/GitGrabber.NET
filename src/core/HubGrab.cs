@@ -87,7 +87,16 @@ namespace GitGrabber
             }
             else {
                 throw new Exception(ExceptionDictionary.NotConnected);
-            } 
+            }
+        }
+
+        public List<GithubGist> GetPublicGists() {
+            if(connection_success) {
+                return FetchPublicGithubGists.Execute("https://api.github.com/gists/public");
+            }
+            else {
+                throw new Exception(ExceptionDictionary.NotConnected);
+            }
         }
 
         /* Emoji API */
