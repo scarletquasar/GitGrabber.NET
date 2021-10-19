@@ -118,6 +118,8 @@ List<GithubUser> UserSearch = GitConnection.SearchUser("search", (int)"max resul
 Dictionary<string, string> Emojis = GitConnection.Emojis();
 ```
 ## Changelog
+- Added User Gists Fetcher
+- Added Gist By Id Fetcher
 - Added Public Gists Fetcher (General)
 - Enabled field "owner" from GithubRepo model as `Dictionary<string, dynamic>`
 - Enabled "hireable" and "email" from GithubUser model as nullable beings
