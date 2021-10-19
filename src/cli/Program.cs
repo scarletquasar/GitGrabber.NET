@@ -15,8 +15,8 @@ namespace cli
             
             GitGrabConnection GitConnection = new();
             GitConnection.Connect();
-            List<GithubGist> Htapps = GitConnection.GetPublicGists();
-            Console.WriteLine(Htapps.ElementAt(0).url);
+            List<GithubGist> Htapps = GitConnection.GetUser("sebastienros").GetGists();
+            Console.WriteLine(Htapps.ElementAt(0).html_url);
         }
     }
 }
