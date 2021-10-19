@@ -20,6 +20,9 @@ Get data directly from the official GitHub API in a fast and practical way and u
 | 1.0.0 | .NET Standard 2.0+ |
 
 ## Development
+
+Warning: You may use the last stable release (<img src="https://shields.io/github/v/tag/EternalQuasar0206/git-grabber" />) to prevent several issues and problems, the main branch is focused in development and tests.
+
 | Version | Branch |
 | --- | ----------- |
 | Development | Main |
