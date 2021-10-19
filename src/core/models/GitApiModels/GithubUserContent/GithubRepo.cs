@@ -1,10 +1,12 @@
+using System.Collections.Generic;
+
 namespace GitGrabber.Models {
     public class GithubRepo {
         public int id { get; set; }
         public string node_id { get; set; }
         public string name { get; set; }
-        //public bool private { get; set; } /* Info: Disabled due to major issues */
-        //public string owner { get; set; } /* Todo: Enable with GithubUser model */
+        public bool @private { get; set; }
+        public object owner { get; set; } /* Under Watch */
         public string html_url { get; set; }
         public string description { get; set; }
         public bool fork { get; set; }
@@ -67,7 +69,7 @@ namespace GitGrabber.Models {
         public bool archived { get; set; } = false;
         public bool disabled { get; set; } = false;
         public int open_issues_count { get; set; }
-        //public string license { get; set; } /* Info: Only the license key will be fetched from the requisition */
+        public GithubLicense license { get; set; }
         public bool allow_forking { get; set; }
         public string visibility { get; set; }
         public int forks { get; set; }
