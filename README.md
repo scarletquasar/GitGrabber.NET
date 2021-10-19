@@ -118,6 +118,7 @@ Dictionary<string, string> Emojis = GitConnection.Emojis();
 ```
 ## Changelog
 
+- Added Public Gists Fetcher (General)
 - Enabled field "owner" from GithubRepo model as `Dictionary<string, dynamic>`
 - Enabled "hireable" and "email" from GithubUser model as nullable beings
 
