@@ -99,6 +99,15 @@ namespace GitGrabber
             }
         }
 
+        public GithubGist GetGist(string id) {
+            if(connection_success) {
+                return FetchGithubGist.Execute($"https://api.github.com/gists/{id}");
+            }
+            else {
+                throw new Exception(ExceptionDictionary.NotConnected);
+            }
+        }
+
         /* Emoji API */
 
         public Dictionary<string, string> Emojis() {
