@@ -141,6 +141,7 @@ GithubGist GistById = GitConnection.GetGist("id");
 - Enabled "hireable" and "email" from GithubUser model as nullable beings
 
 ## TODO
+- Update codebase to .NET 5+
 - Add Authenticated User Operations Support
 - Develop Command Line Interface utility
 - Add Exception Handlers to Fetchers
