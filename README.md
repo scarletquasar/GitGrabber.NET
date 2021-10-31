@@ -44,6 +44,17 @@ a reference in the *.csproj:
 ## Features
 | Feature | State |
 | --- | ----------- |
+| 🔵 **Authenticated Features** |
+| User Authentication | Not Started ❌ 
+| Current User | Not Started ❌ |
+| Issues | Not Started ❌ |
+| Keys | Not Started ❌ |
+| Notifications | Not Started ❌ |
+| All User Repositories | Not Started ❌ |
+| Starred | Not Started ❌ |
+| Emails | Not Started ❌ |
+| 🔵 **API Usage** |
+| Rate Limit Information | Not Started ❌ |
 | 🔵 **User** |
 | Gihub User | Working ✔ |
 | Github User Followers | Working ✔ |
@@ -59,6 +70,8 @@ a reference in the *.csproj:
 | Github Repository | Working ✔ |
 | 🔵 **Misc** |
 | Github Emojis | Working ✔ |
+| Github Feed | Not Started ❌ |
+| Github Code Search | Not Started ❌ |
 | 🔵 **Gists** |
 | Gihub Gist + Public Gists List | Working ✔ |
 | Gihub Gist by id | Working ✔ |
@@ -142,6 +155,5 @@ GithubGist GistById = GitConnection.GetGist("id");
 
 ## TODO
 - Update codebase to .NET 5+
-- Add Authenticated User Operations Support
 - Develop Command Line Interface utility
 - Add Exception Handlers to Fetchers
