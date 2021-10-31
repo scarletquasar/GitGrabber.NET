@@ -1,62 +1,24 @@
 ﻿using System;
 using GitGrabber.Models;
 using GitGrabber.Components;
-using System.Text.Json;
+using System.Threading.Tasks;
 using System.Collections.Generic;
 
 namespace GitGrabber
 {
     public class GitGrabConnection
     {
-        private bool connection_success = false;
         /* Preset Definitions */
         public int SearchItemsPerPage = 30;
         public int SearchDefaultPage = 1;
-        /* Singleton Definitions */
-        private FetchGithubUser UserHandler = new FetchGithubUser();
-        private FetchGithubRepo RepoHandler = new FetchGithubRepo();
-        private FetchGithubOrg OrgHandler = new FetchGithubOrg();
-        private FetchGithubUserSearch UserSearchHandler = new FetchGithubUserSearch();
-
-        /* Connection Definitions */
-        private GithubConnection connection = new GithubConnection() {
-            connection_success = false
-        };
-
-        /* Starts the connection. Method used to avoid different errors that can have different causes. */
-        public bool Connect() {
-            connection = ConnectionWorker.Connect();
-            connection_success = connection.connection_success;
-            return connection.connection_success;
-        }
-
-        /* Connects to the main api and gets a GithubApiResponse object with all the returns from the original API. */
-        public GithubApiResponse GithubApi() {
-            if(connection_success) {
-                return ConnectionWorker.Fetch();
-            }
-            else {
-                throw new Exception(ExceptionDictionary.NotConnected);
-            }
-        }
 
         /* Basic Getters */
-        public GithubUser GetUser(string username) {
-            if(connection_success) {
-                return UserHandler.GrabObject("https://api.github.com/users/" + username);
-            }
-            else {
-                throw new Exception(ExceptionDictionary.NotConnected);
-            }
+        public async Task<GithubUser> GetUser(string username) {
+            return (await PublicFetchOperation.Fetch("User", $"https://api.github.com/users/{username}"));
         }
 
-        public GithubRepo GetRepo(string username, string reponame) {
-            if(connection_success) {
-                return RepoHandler.GrabObject("https://api.github.com/repos/" + username + "/" + reponame);
-            }
-            else {
-                throw new Exception(ExceptionDictionary.NotConnected);
-            }
+        public async Task<GithubRepo> GetRepo(string username, string reponame) {
+            return (await PublicFetchOperation.Fetch("Repo", $"https://api.github.com/repos/{username}/{reponame}"));
         }
 
         public GithubOrg GetOrg(string org_name) {

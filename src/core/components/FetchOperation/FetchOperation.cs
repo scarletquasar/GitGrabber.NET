@@ -1,6 +1,5 @@
 using System.Net;
 using System.IO;
-using System;
 using System.Threading.Tasks;
 using GitGrabber.Models;
 using System.Text.Json;
@@ -46,15 +45,27 @@ namespace GitGrabber.Components {
                 switch(type) {
                     case "User":
                         return JsonSerializer.Deserialize<GithubUser>(response);
-                    
-                    case "Org":
-                        return JsonSerializer.Deserialize<GithubOrg>(response);
-                    
+
                     case "UserList":
                         return JsonSerializer.Deserialize<List<GithubUser>>(response);
 
+                    case "Org":
+                        return JsonSerializer.Deserialize<GithubOrg>(response);
+
                     case "OrgList":
                         return JsonSerializer.Deserialize<List<GithubOrg>>(response);
+
+                    case "Repo":
+                        return JsonSerializer.Deserialize<GithubRepo>(response);
+
+                    case "RepoList":
+                        return JsonSerializer.Deserialize<List<GithubRepo>>(response);
+                    
+                    case "Gist":
+                        return JsonSerializer.Deserialize<GithubGist>(response);
+
+                    case "GitsList":
+                        return JsonSerializer.Deserialize<List<GithubGist>>(response);
 
                     case "Emoji":
                         return JsonSerializer.Deserialize<Dictionary<string, string>>(response);
