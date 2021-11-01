@@ -25,7 +25,7 @@ Warning: DO NOT USE THE MAIN BRANCH VERSION. You may use the last stable release
 
 | Version | Branch |
 | --- | ----------- |
-| Development | Main |
+| Development - 1.2.0 | Main |
 | 1.1.0 | ver1.1.0 |
 | 1.0.0 | ver1.0.0 |
 
