@@ -147,13 +147,12 @@ List<GithubGist> PublicGists = GitConnection.GetPublicGists();
 GithubGist GistById = GitConnection.GetGist("id");
 ```
 ## Changelog
-- Added User Gists Fetcher
-- Added Gist By Id Fetcher
-- Added Public Gists Fetcher (General)
-- Enabled field "owner" from GithubRepo model as `Dictionary<string, dynamic>`
-- Enabled "hireable" and "email" from GithubUser model as nullable beings
+- Operations are now asynchronous to improve data handling
+- Refactored data fetchers with multiple code quality upgrades
 
 ## TODO
+- Test fetchers refactor/updates
+- Make extended documentation
 - Update codebase to .NET 5+
 - Develop Command Line Interface utility
 - Add Exception Handlers to Fetchers
