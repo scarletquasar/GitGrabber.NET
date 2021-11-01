@@ -8,7 +8,7 @@
 <p align="center">
 Get data directly from the official GitHub API in a fast and practical way and use it directly in your .NET projects.
 
-[![CodeFactor](https://www.codefactor.io/repository/github/eternalquasar0206/git-grabber/badge/main)](https://www.codefactor.io/repository/github/eternalquasar0206/git-grabber/overview/main) <img src="https://shields.io/github/v/tag/EternalQuasar0206/git-grabber?" /> | Currently in development: v1.2.0
+[![CodeFactor](https://www.codefactor.io/repository/github/eternalquasar0206/git-grabber/badge/main)](https://www.codefactor.io/repository/github/eternalquasar0206/git-grabber/overview/main) <img src="https://shields.io/github/v/tag/EternalQuasar0206/git-grabber?" />
 
 </p>
 </center>
@@ -21,7 +21,7 @@ Get data directly from the official GitHub API in a fast and practical way and u
 
 ## Development
 
-Warning: You may use the last stable release <img src="https://shields.io/github/v/tag/EternalQuasar0206/git-grabber" /> to prevent several issues and problems, the main branch is focused in development and tests.
+Warning: DO NOT USE THE MAIN BRANCH VERSION. You may use the last stable release <img src="https://shields.io/github/v/tag/EternalQuasar0206/git-grabber" /> to prevent several issues and problems, the main branch is focused in development and tests.
 
 | Version | Branch |
 | --- | ----------- |
