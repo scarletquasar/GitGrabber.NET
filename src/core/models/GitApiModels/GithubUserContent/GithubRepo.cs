@@ -6,7 +6,7 @@ namespace GitGrabber.Models {
         public string node_id { get; set; }
         public string name { get; set; }
         public bool @private { get; set; }
-        public Dictionary<string, dynamic> owner { get; set; } /* Under Watch */
+        public Dictionary<string, dynamic> owner { get; set; }
         public string html_url { get; set; }
         public string description { get; set; }
         public bool fork { get; set; }

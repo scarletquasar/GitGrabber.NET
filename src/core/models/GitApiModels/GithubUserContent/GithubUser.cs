@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
+using System.Threading.Tasks;
 using GitGrabber.Components;
 
 namespace GitGrabber.Models {
@@ -41,19 +42,19 @@ namespace GitGrabber.Models {
         public double score { get; set; }
 
         /* Built-in dynamic data retrieval features */
-        public List<GithubUser> GetFollowers() {
-            return FetchUserFollowers.Execute($"https://api.github.com/users/{login}/followers");
+        public async Task<List<GithubUser>> GetFollowers() {
+            return (await PublicFetchOperation.Fetch("UserList", $"https://api.github.com/users/{login}/followers"));
         }
-        public List<GithubRepo> GetRepos() {
-            return FetchUserRepos.Execute($"https://api.github.com/users/{login}/repos");
-        }
-
-        public List<GithubOrg> GetOrgs() {
-            return FetchUserOrgs.Execute($"https://api.github.com/users/{login}/orgs");
+        public async Task<List<GithubRepo>> GetRepos() {
+            return (await PublicFetchOperation.Fetch("RepoList", $"https://api.github.com/users/{login}/repos"));
         }
 
-        public List<GithubGist> GetGists() {
-            return FetchPublicGithubGists.Execute($"https://api.github.com/users/{login}/gists");
+        public async Task<List<GithubOrg>> GetOrgs() {
+            return (await PublicFetchOperation.Fetch("OrgList", $"https://api.github.com/users/{login}/orgs"));
+        }
+
+        public async Task<List<GithubGist>> GetGists() {
+            return (await PublicFetchOperation.Fetch("GistList", $"https://api.github.com/users/{login}/gists"));
         }
     }
 }

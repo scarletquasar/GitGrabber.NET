@@ -21,11 +21,11 @@ Get data directly from the official GitHub API in a fast and practical way and u
 
 ## Development
 
-Warning: You may use the last stable release <img src="https://shields.io/github/v/tag/EternalQuasar0206/git-grabber" /> to prevent several issues and problems, the main branch is focused in development and tests.
+Warning: DO NOT USE THE MAIN BRANCH VERSION. You may use the last stable release <img src="https://shields.io/github/v/tag/EternalQuasar0206/git-grabber" /> to prevent several issues and problems, the main branch is focused in development and tests.
 
 | Version | Branch |
 | --- | ----------- |
-| Development | Main |
+| Development - 1.2.0 | Main |
 | 1.1.0 | ver1.1.0 |
 | 1.0.0 | ver1.0.0 |
 
@@ -147,13 +147,12 @@ List<GithubGist> PublicGists = GitConnection.GetPublicGists();
 GithubGist GistById = GitConnection.GetGist("id");
 ```
 ## Changelog
-- Added User Gists Fetcher
-- Added Gist By Id Fetcher
-- Added Public Gists Fetcher (General)
-- Enabled field "owner" from GithubRepo model as `Dictionary<string, dynamic>`
-- Enabled "hireable" and "email" from GithubUser model as nullable beings
+- Operations are now asynchronous to improve data handling
+- Refactored data fetchers with multiple code quality upgrades
 
 ## TODO
+- Test fetchers refactor/updates
+- Make extended documentation
 - Update codebase to .NET 5+
 - Develop Command Line Interface utility
 - Add Exception Handlers to Fetchers
