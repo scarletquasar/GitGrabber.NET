@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using GitGrabber.Components;
+using System.Threading.Tasks;
 
 namespace GitGrabber.Models {
     public class GithubOrg {
@@ -28,8 +29,8 @@ namespace GitGrabber.Models {
         public string type { get; set; }
 
         /* Built-in dynamic data retrieval features */
-        public List<GithubRepo> GetRepos() {
-            return FetchGithubOrgRepos.Execute($"https://api.github.com/orgs/{login}/repos");
+        public async Task<List<GithubRepo>> GetRepos() {
+            return (await PublicFetchOperation.Fetch("RepoList", $"https://api.github.com/users/{login}/repos"));
         }
     }
 }
