@@ -8,7 +8,7 @@
 <p align="center">
 Get data directly from the official GitHub API in a fast and practical way and use it directly in your .NET projects.
 
-[![CodeFactor](https://www.codefactor.io/repository/github/eternalquasar0206/git-grabber/badge/main)](https://www.codefactor.io/repository/github/eternalquasar0206/git-grabber/overview/main) <img src="https://shields.io/github/v/tag/EternalQuasar0206/git-grabber?" />
+[![CodeFactor](https://www.codefactor.io/repository/github/eternalquasar0206/git-grabber/badge/main)](https://www.codefactor.io/repository/github/eternalquasar0206/git-grabber/overview/main) <img src="https://shields.io/github/v/tag/EternalQuasar0206/git-grabber?" /> | Currently in development: v1.2.0
 
 </p>
 </center>
