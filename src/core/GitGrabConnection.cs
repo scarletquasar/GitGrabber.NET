@@ -21,64 +21,31 @@ namespace GitGrabber
             return (await PublicFetchOperation.Fetch("Repo", $"https://api.github.com/repos/{username}/{reponame}"));
         }
 
-        public GithubOrg GetOrg(string org_name) {
-            if(connection_success) {
-                return OrgHandler.GrabObject("https://api.github.com/orgs/" + org_name);
-            }
-            else {
-                throw new Exception(ExceptionDictionary.NotConnected);
-            }
+        public async Task<GithubOrg> GetOrg(string org_name) {
+            return (await PublicFetchOperation.Fetch("Org", $"https://api.github.com/orgs/{org_name}"));
         }
         
         /* API Searchers */
-        public List<GithubUser> SearchUser(string search) {
-            if(connection_success) {
-                return UserSearchHandler.GrabObject("https://api.github.com/search/users?q=" + search);
-            }
-            else {
-                throw new Exception(ExceptionDictionary.NotConnected);
-            } 
+        public async Task<List<GithubUser>> SearchUser(string search) {
+            return (await PublicFetchOperation.Fetch("UserList", $"https://api.github.com/search/users?q={search}"));
         }
 
-        public List<GithubUser> SearchUser(string search, int per_page, int page) {
-            if(connection_success) {
-                if(per_page == 0) per_page = SearchItemsPerPage;
-                if(page == 0) page = SearchDefaultPage;
-                return new FetchGithubUserSearch().
-                GrabObject($"https://api.github.com/search/users?q={search}&page={page}&per_page={per_page}");
-            }
-            else {
-                throw new Exception(ExceptionDictionary.NotConnected);
-            }
+        public async Task<List<GithubUser>> SearchUser(string search, int per_page, int page) {
+            return (await PublicFetchOperation.Fetch("UserList", $"https://api.github.com/search/users?q={search}&page={page}&per_page={per_page}"));
         }
 
-        public List<GithubGist> GetPublicGists() {
-            if(connection_success) {
-                return FetchPublicGithubGists.Execute("https://api.github.com/gists/public");
-            }
-            else {
-                throw new Exception(ExceptionDictionary.NotConnected);
-            }
+        public async Task<List<GithubGist>> GetPublicGists() {
+            return (await PublicFetchOperation.Fetch("GistList", "https://api.github.com/gists/public"));
         }
 
-        public GithubGist GetGist(string id) {
-            if(connection_success) {
-                return FetchGithubGist.Execute($"https://api.github.com/gists/{id}");
-            }
-            else {
-                throw new Exception(ExceptionDictionary.NotConnected);
-            }
+        public async Task<GithubGist> GetGist(string id) {
+            return (await PublicFetchOperation.Fetch("GistList", $"https://api.github.com/gists/{id}"));
         }
 
         /* Emoji API */
 
-        public Dictionary<string, string> Emojis() {
-            if(connection_success) {
-                return new FetchEmojiList().GrabObject("https://api.github.com/emojis");
-            }
-            else {
-                throw new Exception(ExceptionDictionary.NotConnected);
-            }
+        public async Task<Dictionary<string, string>> Emojis() {
+            return (await PublicFetchOperation.Fetch("Emoji", "https://api.github.com/emojis"));
         }
     }
 }
