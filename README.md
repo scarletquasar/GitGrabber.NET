@@ -151,6 +151,7 @@ GithubGist GistById = GitConnection.GetGist("id");
 - Refactored data fetchers with multiple code quality upgrades
 
 ## TODO
+- Setup XUnit unit tests to all the functions
 - Test fetchers refactor/updates
 - Make extended documentation
 - Update codebase to .NET 5+
