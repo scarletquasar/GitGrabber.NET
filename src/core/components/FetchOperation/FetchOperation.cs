@@ -39,7 +39,7 @@ namespace GitGrabber.Components {
                 }
             }
 
-            var response = await getGithubApiData();;
+            var response = await getGithubApiData();
 
             if(response != null) {
                 switch(type) {
