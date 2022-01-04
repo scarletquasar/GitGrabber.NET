@@ -32,6 +32,7 @@ Warning: DO NOT USE THE MAIN BRANCH VERSION. You may use the last stable release
 ## Usage
 To get started with GitGrabber you have to install the package manually adding the `git-grabber.dll` (of /out/ folder in the repository) in the project and
 a reference in the *.csproj:
+
 ```html
 <ItemGroup>
   <Reference Include="git-grabber">
