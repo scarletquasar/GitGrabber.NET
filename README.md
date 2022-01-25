@@ -30,7 +30,7 @@ Warning: DO NOT USE THE MAIN BRANCH VERSION. You may use the last stable release
 | 1.0.0 | ver1.0.0 |
 
 ## Usage
-To get started with GitGrabber you have to install the package manually adding the `git-grabber.dll` (of /out/ folder in the repository) in the project and
+(Nuget package soon). To get started with GitGrabber you have to install the package manually adding the `git-grabber.dll` (of /out/ folder in the repository) in the project and
 a reference in the *.csproj:
 
 ```html
