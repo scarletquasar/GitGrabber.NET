@@ -16,7 +16,7 @@ namespace GitGrabber.Services
         public GithubConnector()
         {
             _httpClient = new HttpClient();
-            _httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("GitGrabber Client v2.0");
+            _httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("GitGrabber Github Client v2.0");
         }
         public T Get<T>(string route, string username, string token)
         {
