@@ -10,6 +10,7 @@ Get and manage data directly from the Github API.
 
 </p>
 </center>
+
 ## Development
 
 | Version | Branch | Support |
@@ -20,5 +21,5 @@ Get and manage data directly from the Github API.
 
 ## Usage
 
-This version (2.0.0) is a open alpha and does not have a Nuget package. Feel free to clone
+**Important:** This version (2.0.0) is a open alpha and does not have a Nuget package. Feel free to clone
 this project and reference in your solutions.
