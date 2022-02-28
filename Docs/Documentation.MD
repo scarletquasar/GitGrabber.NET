@@ -22,8 +22,9 @@ You also need to instantiate a new GithubConnector.
 
 Example:
 
-```
+```csharp
 var _connector = new GithubConnector();
 var _connection = new GithubConnection([username], [token], _connector);
 ```
 
+## Retrieving informations
