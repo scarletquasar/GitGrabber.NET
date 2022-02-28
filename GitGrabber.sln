@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitGrabber.Abstractions", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitGrabber.StandaloneModels", "GitGrabber.StandaloneModels\GitGrabber.StandaloneModels.csproj", "{4A720DC4-2412-419A-A013-0BF29A58B5B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitGrabber.Tests", "GitGrabber.Tests\GitGrabber.Tests.csproj", "{D3B95B7E-327B-4DED-B940-6B9E77263793}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitGrabber.Tests", "GitGrabber.Tests\GitGrabber.Tests.csproj", "{D3B95B7E-327B-4DED-B940-6B9E77263793}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{E7966EA2-2DE7-4F4B-B214-131A797A94E4}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
