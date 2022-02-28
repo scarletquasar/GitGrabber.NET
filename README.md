@@ -3,12 +3,13 @@
   <br>
   GitGrabber
 </h1>
+<sup>
+	v2.0.0
+</sup>
 
 <center>
 <p align="center">
 Get and manage data directly from the Github API. 
-
-[![CodeFactor](https://www.codefactor.io/repository/github/eternalquasar0206/git-grabber/badge/main)](https://www.codefactor.io/repository/github/eternalquasar0206/git-grabber/overview/main) <img src="https://shields.io/github/v/tag/EternalQuasar0206/git-grabber?" />
 
 </p>
 </center>
