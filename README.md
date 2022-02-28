@@ -26,9 +26,9 @@ this project and reference in your solutions.
 
 ## Todo
 
-- [] Make documentation
-- [] Implement action operations (currently only read-only operations)
-- [] Integration with Github Actions
-- [] Implement GitLab support
-- [] Implement Bitbucket support
-- [] Implement Git operations support
+- [ ] Make documentation
+- [ ] Implement action operations (currently only read-only operations)
+- [ ] Integration with Github Actions
+- [ ] Implement GitLab support
+- [ ] Implement Bitbucket support
+- [ ] Implement Git operations support
