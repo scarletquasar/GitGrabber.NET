@@ -32,7 +32,8 @@ namespace GitGrabber.Services
                 return JsonSerializer.Deserialize<T>(responseString);
             }
 
-            throw new Exception($"{Properties.Resources.ConnectionError}({route}) => {response.Content.ReadAsStringAsync().Result}");
+            throw new HttpRequestException
+                ($"{Properties.Resources.ConnectionError}({route}) => {response.Content.ReadAsStringAsync().Result}");
         }
 
         public async Task<T> GetAsync<T>(string route, string username, string token)
@@ -49,7 +50,8 @@ namespace GitGrabber.Services
                 return JsonSerializer.Deserialize<T>(responseString);
             }
 
-            throw new Exception($"{Properties.Resources.ConnectionError}({response.StatusCode}) => {await response.Content.ReadAsStringAsync()}");
+            throw new HttpRequestException
+                ($"{Properties.Resources.ConnectionError}({response.StatusCode}) => {await response.Content.ReadAsStringAsync()}");
         }
     }
 }
