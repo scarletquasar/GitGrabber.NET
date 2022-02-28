@@ -14,8 +14,8 @@ Get and manage data directly from the Github API.
 ## Development
 
 | Version | Branch | Support |
-| --- | ----------- | ------ |
-| 2.0.0 | v2.0.0 | | .NET 6.0+ |
+| --- | ----------- | ------- |
+| 2.0.0 | v2.0.0 | .NET 6.0+ |
 | 1.1.0 | ver1.1.0 | .NET Standard 2.0+ |
 | 1.0.0 | ver1.0.0 | .NET Standard 2.0+ |
 
