@@ -26,7 +26,7 @@ this project and reference in your solutions.
 
 ## Testing
 
-GitGrabber.Tests will need a valid `githubConfig.json` (Github) credentials to work, you can execute all the tests
+`GitGrabber.Tests` will need a valid `githubConfig.json` (Github) credentials to work, you can execute all the tests
 after providing the needed informations.
 
 ## Todo
