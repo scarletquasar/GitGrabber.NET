@@ -2,7 +2,6 @@
 using GitGrabber.Abstractions.Misc;
 using GitGrabber.Abstractions.Social;
 using System.Collections.Generic;
-using System.IO;
 using System.Threading.Tasks;
 
 namespace GitGrabber.Abstractions.Connections

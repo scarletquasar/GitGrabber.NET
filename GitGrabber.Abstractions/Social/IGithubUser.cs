@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-
 namespace GitGrabber.Abstractions.Social
 {
     public interface IGithubUser
