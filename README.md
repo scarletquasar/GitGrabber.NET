@@ -7,7 +7,7 @@
 <center>
 <p align="center">
 Get and manage data directly from the Github API. Check the
-<a href="https://github.com/EternalQuasar0206/GitGrabber.NET/blob/v2.0.0/Docs/GithubConnection.MD">documentation</a>
+<a href="./Docs/GithubConnection.MD">documentation</a>.
 </p>
 </center>
 
