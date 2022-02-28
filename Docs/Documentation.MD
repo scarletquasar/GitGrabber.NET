@@ -28,3 +28,8 @@ var _connection = new GithubConnection([username], [token], _connector);
 ```
 
 ## Retrieving informations
+GithubConnection aggregates several methods to get data:
+
+```csharp
+[connection].GetUser/GetUserAsync(string username)
+```
