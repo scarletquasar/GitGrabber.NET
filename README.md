@@ -7,7 +7,7 @@
 <center>
 <p align="center">
 Get and manage data directly from the Github API. Check the
-<a href="./Docs/GithubConnection.MD">documentation</a>.
+<a href="./Docs/Documentation.MD">documentation</a>.
 </p>
 </center>
 
