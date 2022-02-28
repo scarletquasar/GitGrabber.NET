@@ -1,11 +1,8 @@
-<h1 align="center">
+<div align="center">
   <img src="https://i.imgur.com/JnSjFjJ.png" width="75px">
   <br>
-  GitGrabber
-</h1>
-<sup>
-	v2.0.0
-</sup>
+  <h1>GitGrabber</h1><sup>v2.0.0</sup>
+</div>
 
 <center>
 <p align="center">
