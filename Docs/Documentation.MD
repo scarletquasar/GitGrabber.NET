@@ -15,4 +15,6 @@ Console.WriteLine(myUser.Login);
 ```
 
 ## Setting up a GithubConnection
+To connect to the Github API properly, it is necessary to instantiate a new GithubConnection using username and
+[token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
