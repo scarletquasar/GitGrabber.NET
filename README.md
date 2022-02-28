@@ -24,6 +24,11 @@ Get and manage data directly from the Github API.
 **Important:** This version (2.0.0) is a open alpha and does not have a Nuget package. Feel free to clone
 this project and reference in your solutions.
 
+## Testing
+
+GitGrabber.Tests will need a valid `githubConfig.json` (Github) credentials to work, you can execute all the tests
+after providing the needed informations.
+
 ## Todo
 
 - [ ] Make documentation
