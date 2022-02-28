@@ -31,5 +31,9 @@ var _connection = new GithubConnection([username], [token], _connector);
 GithubConnection aggregates several methods to get data:
 
 ```csharp
-(IGithubUser) [connection].[GetUser/GetUserAsync](string username)
+(GithubUser) [connection].[GetUser/GetUserAsync](string username)
+```
+
+```csharp
+(List<GithubUser>) [connection].[GetUserFollowers/GetUserFollowersAsync](string username)
 ```
