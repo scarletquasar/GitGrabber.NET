@@ -17,10 +17,7 @@ namespace GitGrabber.Tests
         private readonly IGithubConnector _githubConnector;
         public GithubUserTestsAsync()
         {
-            _config = Deserializer
-                      .ByFile<GithubConnectionConfig>($"{AppDomain.CurrentDomain.BaseDirectory}/githubConfig.json") 
-                      ?? new();
-
+            _config = Deserializer.ByFile<GithubConnectionConfig>($"{AppDomain.CurrentDomain.BaseDirectory}/githubConfig.json");
             _githubConnector = new GithubConnector();
             _githubConnection = new GithubConnection(_config.Username, _config.Token, _githubConnector);
         }

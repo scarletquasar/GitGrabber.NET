@@ -11,15 +11,12 @@ namespace GitGrabber.Tests
 {
     public class GithubRepositoryTestsSync
     {
-        private readonly GithubConnectionConfig _config;
+        private readonly GithubConnectionConfig? _config;
         private readonly IGithubConnection _githubConnection;
         private readonly IGithubConnector _githubConnector;
         public GithubRepositoryTestsSync()
         {
-            _config = Deserializer
-                      .ByFile<GithubConnectionConfig>($"{AppDomain.CurrentDomain.BaseDirectory}/githubConfig.json")
-                      ?? new();
-
+            _config = Deserializer.ByFile<GithubConnectionConfig>($"{AppDomain.CurrentDomain.BaseDirectory}/githubConfig.json");
             _githubConnector = new GithubConnector();
             _githubConnection = new GithubConnection(_config.Username, _config.Token, _githubConnector);
         }
