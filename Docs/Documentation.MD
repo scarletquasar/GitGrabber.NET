@@ -58,8 +58,17 @@ var _connection = new GithubConnection([username], [token], _connector);
 ```
 
 ```csharp
-(List<GithubRepository>) connection.GetOrganization(string organization)
-(List<GithubRepository>) await connection.GetOrganizationAsync(string organization)
+(List<GithubRepository>) connection.GetOrganizationRepositories(string organization)
+(List<GithubRepository>) await connection.GetOrganizationRepositoriesAsync(string organization)
 ```
 
+```csharp
+(GithubGist) connection.GetGist(long id)
+(GithubGist) await connection.GetGistAsync(long id)
+```
+
+```csharp
+(GithubRepository) connection.GetRepository(string ownerUsername, string repositoryName)
+(GithubRepository) await connection.GetRepositoryAsync(string ownerUsername, string repositoryName)
+```
 </details>
