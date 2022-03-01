@@ -89,5 +89,5 @@ var _connection = new GithubConnection([username], [token], _connector);
 
 ## Testing
 
-You can change or execute the automated tests by yourself, but you need to feed the "githubConfig.json" file
-with valid login informations in order to connect to the Github API.
+You can change or execute the automated tests by yourself in GitGrabber.Tests, but you need to 
+feed the "githubConfig.json" file with valid login informations in order to connect to the Github API.
