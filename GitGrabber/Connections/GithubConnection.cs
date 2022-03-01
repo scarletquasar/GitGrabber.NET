@@ -20,6 +20,7 @@ namespace GitGrabber.Connections
         private readonly string _username;
         private readonly string _token;
         private readonly IGithubConnector _connector;
+        private readonly List<>
 
         public GithubConnection(string username, string token, IGithubConnector connector)
         {

@@ -8,27 +8,36 @@ namespace GitGrabber.Abstractions.Connections
 {
     public interface IGithubConnection
     {
+        //IGithubUser
         public Task<IGithubUser> GetUserAsync(string username);
         public Task<IEnumerable<IGithubUser>> GetUserFollowersAsync(string username);
         public Task<IEnumerable<IGithubUser>> GetUserFollowingAsync(string username);
-        public Task<IGithubRepository> GetRepositoryAsync(string owner, string name);
         public Task<IEnumerable<IGithubRepository>> GetUserRepositoriesAsync(string username);
-        public Task<IGithubOrganization> GetOrganizationAsync(string organization);
-        public Task<IEnumerable<IGithubRepository>> GetOrganizationRepositoriesAsync(string organization);
         public Task<IEnumerable<IGithubOrganization>> GetUserOrganizationsAsync();
-        public Task<IGithubGist> GetGistAsync(long identifier);
-        public Task<IGithubEmojis> GetEmojisAsync();
-        public Task<IEnumerable<IGithubCommit>> GetRepositoryCommitsAsync(string repoOwner, string repoName);
         public IGithubUser GetUser(string username);
         public IEnumerable<IGithubUser> GetUserFollowers(string username);
         public IEnumerable<IGithubUser> GetUserFollowing(string username);
-        public IGithubRepository GetRepository(string owner, string name);
         public IEnumerable<IGithubRepository> GetUserRepositories(string username);
+        public IEnumerable<IGithubOrganization> GetUserOrganizations();
+
+        //IGithubRepository
+        public Task<IGithubRepository> GetRepositoryAsync(string owner, string name);
+        public Task<IEnumerable<IGithubCommit>> GetRepositoryCommitsAsync(string repoOwner, string repoName);
+        public IGithubRepository GetRepository(string owner, string name);
+        public IEnumerable<IGithubCommit> GetRepositoryCommits(string repoOwner, string repoName);
+
+        //IGithubOrganization
+        public Task<IGithubOrganization> GetOrganizationAsync(string organization);
+        public Task<IEnumerable<IGithubRepository>> GetOrganizationRepositoriesAsync(string organization);
         public IGithubOrganization GetOrganization(string organization);
         public IEnumerable<IGithubRepository> GetOrganizationRepositories(string organization);
-        public IEnumerable<IGithubOrganization> GetUserOrganizations();
+
+        //IGithubGist
+        public Task<IGithubGist> GetGistAsync(long identifier);
         public IGithubGist GetGist(long identifier);
+
+        //IGithubEmojis
+        public Task<IGithubEmojis> GetEmojisAsync();
         public IGithubEmojis GetEmojis();
-        public IEnumerable<IGithubCommit> GetRepositoryCommits(string repoOwner, string repoName);
     }
 }
