@@ -31,25 +31,26 @@ var _connection = new GithubConnection([username], [token], _connector);
 GithubConnection aggregates several methods to get data:
 
 ```csharp
-(GithubUser) [connection].GetUser(string username)
-(GithubUser) await [connection].GetUserAsync(string username)
+(GithubUser) connection.GetUser(string username)
+(GithubUser) await connection.GetUserAsync(string username)
 ```
 
 ```csharp
-(List<GithubUser>) [connection].GetUserFollowers(string username)
-(List<GithubUser>) await [connection].GetUserFollowersAsync(string username)
+(List<GithubUser>) connection.GetUserFollowers(string username)
+(List<GithubUser>) await connection.GetUserFollowersAsync(string username)
 ```
 
 ```csharp
-(List<GithubUser>) [connection].GetUserFollowing(string username)
-(List<GithubUser>) await [connection].GetUserFollowingAsync(string username)
+(List<GithubUser>) connection.GetUserFollowing(string username)
+(List<GithubUser>) await connection.GetUserFollowingAsync(string username)
 ```
 
 ```csharp
-(List<GithubRepository>) [connection].GetUserRepositories(string username)
-(List<GithubRepository>) await [connection].GetUserRepositoriesAsync(string username)
+(List<GithubRepository>) connection.GetUserRepositories(string username)
+(List<GithubRepository>) await connection.GetUserRepositoriesAsync(string username)
 ```
 
 ```csharp
-(GithubOrganization) [connection].[GetOrganization/GetOrganizationAsync](string organization)
+(GithubOrganization) connection.GetOrganization(string organization)
+(GithubOrganization) await connection.GetOrganizationAsync(string organization)
 ```
