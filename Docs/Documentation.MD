@@ -1,5 +1,4 @@
 # Documentation
-This is the official GitGrabber.NET documentation, in it you will find method definitions and usage steps.
 
 ## Abstractions
 In GitGrabber, entities are abstracted to interfaces, which means that to use a given entity obtained from a method, 
