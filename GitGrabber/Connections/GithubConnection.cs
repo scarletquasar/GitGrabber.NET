@@ -6,7 +6,12 @@ using GitGrabber.Abstractions.Social;
 using GitGrabber.Activity;
 using GitGrabber.Misc;
 using GitGrabber.Social;
+using GitGrabber.StandaloneModels.Security;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace GitGrabber.Connections
@@ -20,13 +25,17 @@ namespace GitGrabber.Connections
         private readonly string _username;
         private readonly string _token;
         private readonly IGithubConnector _connector;
-        private readonly List<>
+        private readonly List<GithubPermission> _permissions;
 
         public GithubConnection(string username, string token, IGithubConnector connector)
         {
             _username = username;
             _token = token;
             _connector = connector;
+            foreach(var i in typeof(GithubPermission).GetEnumValues())
+            {
+                _permissions.Add((GithubPermission)i);
+            }
         }
 
         /// <summary>
