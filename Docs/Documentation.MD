@@ -28,7 +28,9 @@ var _connection = new GithubConnection([username], [token], _connector);
 ```
 
 ## Retrieving informations
-GithubConnection aggregates several methods to get data:
+**GithubConnection** aggregates several methods to get data:
+
+<details>
 
 ```csharp
 (GithubUser) connection.GetUser(string username)
@@ -54,3 +56,10 @@ GithubConnection aggregates several methods to get data:
 (GithubOrganization) connection.GetOrganization(string organization)
 (GithubOrganization) await connection.GetOrganizationAsync(string organization)
 ```
+
+```csharp
+(List<GithubRepository>) connection.GetOrganization(string organization)
+(List<GithubRepository>) await connection.GetOrganizationAsync(string organization)
+```
+
+</details>
