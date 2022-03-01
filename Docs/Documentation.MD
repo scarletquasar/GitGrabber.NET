@@ -53,6 +53,11 @@ var _connection = new GithubConnection([username], [token], _connector);
 ```
 
 ```csharp
+(List<GithubOrganization>) connection.GetUserOrganizations(string username)
+(List<GithubOrganization>) await connection.GetUserOrganizationsAsync(string username)
+```
+
+```csharp
 (GithubOrganization) connection.GetOrganization(string organization)
 (GithubOrganization) await connection.GetOrganizationAsync(string organization)
 ```
@@ -70,5 +75,15 @@ var _connection = new GithubConnection([username], [token], _connector);
 ```csharp
 (GithubRepository) connection.GetRepository(string ownerUsername, string repositoryName)
 (GithubRepository) await connection.GetRepositoryAsync(string ownerUsername, string repositoryName)
+```
+
+```csharp
+(GithubRepository) connection.GetRepository(string ownerUsername, string repositoryName)
+(GithubRepository) await connection.GetRepositoryAsync(string ownerUsername, string repositoryName)
+```
+
+```csharp
+(GithubEmojis) connection.GetEmojis()
+(GithubEmojis) await connection.GetEmojisAsync()
 ```
 </details>
