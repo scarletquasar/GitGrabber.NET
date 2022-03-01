@@ -78,8 +78,8 @@ var _connection = new GithubConnection([username], [token], _connector);
 ```
 
 ```csharp
-(GithubRepository) connection.GetRepository(string ownerUsername, string repositoryName)
-(GithubRepository) await connection.GetRepositoryAsync(string ownerUsername, string repositoryName)
+(List<GithubCommit>) connection.GetRepositoryCommits(string ownerUsername, string repositoryName)
+(List<GithubCommit>) await connection.GetRepositoryCommitsAsync(string ownerUsername, string repositoryName)
 ```
 
 ```csharp
