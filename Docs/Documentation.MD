@@ -37,3 +37,15 @@ GithubConnection aggregates several methods to get data:
 ```csharp
 (List<GithubUser>) [connection].[GetUserFollowers/GetUserFollowersAsync](string username)
 ```
+
+```csharp
+(List<GithubUser>) [connection].[GetUserFollowing/GetUserFollowersAsync](string username)
+```
+
+```csharp
+(List<GithubRepository>) [connection].[GetUserRepositories/GetUserRepositoriesAsync](string username)
+```
+
+```csharp
+(GithubOrganization) [connection].[GetOrganization/GetOrganizationAsync](string organization)
+```
