@@ -28,12 +28,3 @@ this project and reference in your solutions.
 
 `GitGrabber.Tests` will need a valid `githubConfig.json` (Github) credentials to work, you can execute all the tests
 after providing the needed informations.
-
-## Todo
-
-- [ ] Make documentation
-- [ ] Implement action operations (currently only read-only operations)
-- [ ] Integration with Github Actions
-- [ ] Implement GitLab support
-- [ ] Implement Bitbucket support
-- [ ] Implement Git operations support
